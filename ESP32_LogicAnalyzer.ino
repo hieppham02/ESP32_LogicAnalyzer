@@ -46,7 +46,7 @@ void setup(void) {
 
   dma_desc_init(CAPTURE_SIZE);
 
-  cfg.gpio_bus[0]  = 0;
+  cfg.gpio_bus[0]  = 25;
   cfg.gpio_bus[1]  = 32;//GPIO01 used for UART 0 RX, able to use it if you select different UART port (1,2) as OLS_Port
   cfg.gpio_bus[2]  = 2;
   cfg.gpio_bus[3]  = 33;//GPIO03 used for UART 0 TX
