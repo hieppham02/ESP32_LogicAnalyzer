@@ -30,3 +30,8 @@ This project steals some code from [esp32-cam-demo](https://github.com/igrr/esp3
 4. Connect cfg.gpio_clk_in (default pin23 )and cfg.gpio_clk_out (default pin22).
 5. Open PulseView with `pulseview -D -d ols:conn=/dev/ttyUSB0::serialcomm=921600/8n1`  ,or from gui, connect device and select Openbench Logic Sniffer & SUMP compatibles (ols)
 6. Channels vs PINS are also available at setup() function. You can also change ports/baud from ESP32_LogicAnalyzer.h file. Please check it out before use.
+
+## From user
+  I use ESP32 DEV-KIT V1 so if you have same model with me you must change **board = esp32doit-devkit-v1** in playformio.ini and change channel 0 to GPIO25 "cfg.gpio_bus[0]  = 25;" in .ino. There are some image to show the result
+  ![PulseView](SPI_in_PulseView.png)
+  ![SPI](Capture_SPI_from_STM32.jpg)
